@@ -51,10 +51,10 @@ def GetGooglePlayStore(link):
         # open all reviews
         url = url+'&showAllReviews=true'
         driver.get(url)
-        time.sleep(5) # wait dom ready
+        time.sleep(20) # wait dom ready
         for i in range(1,30):
             driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')#scroll to load other reviews
-            time.sleep(1)
+            time.sleep(30)
         page = driver.page_source
     
         soup_expatistan = BeautifulSoup(page, "html.parser")
