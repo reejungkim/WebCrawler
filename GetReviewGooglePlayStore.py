@@ -85,6 +85,8 @@ def GetGooglePlayStore(link):
                 review_body = str(expand_page.find("div", class_="UD7Dzf").text)
                 #print("Review Body: ", review_body)
                 
+                star = expand_page.find("div", class_="pf5lIe").find_next()['aria-label']
+                
                 developer_reply = expand_page.find_parent().find("div", class_="LVQB0b")
                 #if hasattr(developer_reply, "text"):
                 #    print("Developer Reply: "+"\n", str(developer_reply.text))
@@ -93,7 +95,7 @@ def GetGooglePlayStore(link):
             
     
                 new_row = {'author':author, 'review_date':review_date, 
-                           'reviewer_ratings':reviewer_ratings, 'review':review_body, 
+                           'reviewer_ratings':reviewer_ratings, 'review':review_body, 'star':star,
                            'developer_reply': developer_reply
                     }
                 df = df.append(new_row, ignore_index=True)
