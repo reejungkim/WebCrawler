@@ -74,9 +74,7 @@ def GetGooglePlayStore(link):
                 //didn't find reviewer link
                 print("Reviewer Link: ", expand_page.find("a", class_="reviews-permalink")['href'])
                 '''
-                reviewer_ratings = expand_page.find("div", class_="pf5lIe").find_next()['aria-label'];
-                reviewer_ratings = reviewer_ratings.split('(')[0]
-                reviewer_ratings = ''.join(x for x in reviewer_ratings if x.isdigit())
+                reviewer_ratings = expand_page.find("div", class_="jUL89d y92BAb").text
                 #print("Reviewer Ratings: ", reviewer_ratings)
                 '''
                 //didn't find review title

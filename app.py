@@ -16,4 +16,5 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.proxy import *
 
-GetGooglePlayStore(link="https://play.google.com/store/apps/details?id=kr.co.ssg&hl=ko&gl=KR")
+GetGooglePlayStore(link="https://play.google.com/store/apps/details?id=com.kakaobank.channel&hl=ko&showAllReviews=true")
+print("done!")
