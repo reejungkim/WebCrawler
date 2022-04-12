@@ -6,6 +6,12 @@
 <br></br>
 
 
+```
+pip install chromedriver-autoinstaller
+
+```
+
+
 
 [View code: scraping Google Play Store reviews](https://nbviewer.jupyter.org/github/reejungkim/WebCrawler/blob/master/Google%20App%20Play%20Web%20Scraping.ipynb)
 
